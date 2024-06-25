@@ -1,0 +1,61 @@
+.item-advant {
+    padding: 30px;
+    border-radius: 44px;
+    background: $white10;
+    position: relative;
+    h5 {
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+    &__icon {
+        max-width: 90px;
+        position: absolute;
+        top: -12px;
+        right: 12px;
+    }
+    @media (max-width: $bp1) {
+        padding: 20px;
+        h5 {
+            max-width: 260px;
+        }
+        &__icon {
+            max-width: 80px;
+            right: 0;
+            transform: scale(0.9);
+            transform-origin: top right;
+        }
+    }
+    @media (max-width: $bp3) {
+        padding: 16px;
+        border-radius: 28px;
+        h5 {
+            max-width: 200px;
+        }
+        &__icon {
+            transform: scale(0.67);
+        }
+    }
+    @media (max-width: $bp4) {
+        h5 {
+            max-width: calc(100% - 50px);
+        }
+    }
+}
+.advant {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    @media (max-width: $bp1) {
+        &__row {
+            gap: 10px;
+        }
+    }
+    @media (max-width: $bp4) {
+        &__row {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+}
